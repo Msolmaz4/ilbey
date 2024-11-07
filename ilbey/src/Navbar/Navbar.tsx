@@ -1,8 +1,17 @@
+import React from "react";
+
 const Navbar = () => {
+  const navTitle = [
+    { title: "Taxes", items: ["income", "aaaa", "bbbb", "cccc"] },
+    { title: "Accounting", items: ["income", "aaaa", "bbbb", "cccc"] },
+    { title: "Industries", items: ["income", "aaaa", "bbbb", "cccc"] },
+    { title: "About Us", items: ["income", "ddddddddd", "cccccccccccc"] },
+  ];
+
   return (
-    <nav className="flex items-center justify-between bg-white p-4 border-b border-gray-300 shadow-md">
+    <nav className=" flex top-0 items-center justify-between bg-white p-4 border-b border-gray-300 shadow-md w-full">
       {/* Logo Section */}
-      <div className="flex items-center space-x-2 text-base">
+      <div className="flex items-center space-x-2 text-base"> 
         {/* Logo with specified dimensions */}
         <img
           src="https://cdn.prod.website-files.com/61dfd39227e690bdaa36e644/620b4f190d1db517468a776c_logo.svg"
@@ -11,20 +20,28 @@ const Navbar = () => {
           style={{ width: "197.35px", height: "34px" }}
         />
       </div>
+
       {/* Center Menu Items */}
       <div className="hidden md:flex space-x-6 text-gray-700">
-        <a href="#taxes" className="hover:text-indigo-600">
-          Taxes
-        </a>
-        <a href="#accounting" className="hover:text-indigo-600">
-          Accounting
-        </a>
-        <a href="#industries" className="hover:text-indigo-600">
-          Industries
-        </a>
-        <a href="#about" className="hover:text-indigo-600">
-          About Us
-        </a>
+        {navTitle.map((navItem, index) => (
+          <div key={index} className="relative group">
+            {/* Main Menu Title */}
+            <span className="cursor-pointer hover:text-indigo-600">
+              {navItem.title}
+            </span>
+
+            {/* Submenu Items - Shown on Hover */}
+            <div className="absolute left-0 top-full mt-2 hidden group-hover:block bg-white shadow-lg rounded-md border border-gray-200">
+              <ul className="py-2">
+                {navItem.items.map((item, idx) => (
+                  <li key={idx} className="px-4 py-2 hover:bg-indigo-100">
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* Contact Section */}

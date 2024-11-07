@@ -1,0 +1,11 @@
+.navbar1 {
+  background-color: #f8f8f8;
+  padding: 8px 16px;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar1-hidden {
+  opacity: 0;
+  transform: translateY(-100%);
+}

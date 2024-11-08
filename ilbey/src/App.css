@@ -9,3 +9,25 @@
   opacity: 0;
   transform: translateY(-100%);
 }
+.derleme {
+  background-color: red;
+}
+.derleme1 {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius:  0 50%    50% 0; /* Sadece sağ tarafı yuvarlak yap */
+  position: relative;
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+/* Soldan gelen animasyon */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); /* Ekranın solundan başlar */
+  }
+  100% {
+    transform: translateX(0); /* Konumunda durur */
+  }
+}
+

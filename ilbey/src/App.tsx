@@ -5,7 +5,7 @@ import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Navbar1 from "./Navbar/Navbar1";
 import "../styles.css"
-import Icon from "./Home/Icon";
+import Icon from "./Home/IconGrid";
 function App() {
   const [showNavbar1, setShowNavbar1] = useState(true);
 

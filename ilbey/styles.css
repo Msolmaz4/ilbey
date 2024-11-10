@@ -1,3 +1,10 @@
 .derleme {
   @apply bg-orange-500 flex h-screen w-screen;
 }
+.icon-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#f5f1ef] mt-[-70px] pt-[140px] pb-[60px] text-[16px];
+}
+
+.icon-container {
+  @apply border border-red-500 flex items-center justify-center h-full p-4;
+}

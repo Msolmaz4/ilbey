@@ -1,0 +1,3 @@
+.derleme {
+  @apply bg-orange-500 flex h-screen w-screen;
+}

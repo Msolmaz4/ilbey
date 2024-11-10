@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 
 
 const Navbar = () => {
@@ -43,9 +44,9 @@ const Navbar = () => {
         <a href="tel:6308645549" className="hidden md:block text-gray-700 hover:text-indigo-600">
           (630) 864-5549
         </a>
-        <a href="#contact" className="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700">
-          Contact Us
-        </a>
+        
+        <Button text ="Contact Us"/>
+        
       </div>
 
       {/* Mobile Menu Button */}

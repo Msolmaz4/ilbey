@@ -9,9 +9,7 @@
   opacity: 0;
   transform: translateY(-100%);
 }
-.derleme {
-  background-color: red;
-}
+
 .derleme1 {
   width: 100px;
   height: 100px;
@@ -19,6 +17,7 @@
   border-radius:  0 50%    50% 0; /* Sadece sağ tarafı yuvarlak yap */
   position: relative;
   animation: slideInFromLeft 1s ease-out forwards;
+  
 }
 
 /* Soldan gelen animasyon */

@@ -6,6 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import Navbar1 from "./Navbar/Navbar1";
 import "../styles.css"
 import Icon from "./Home/IconGrid";
+import Tax from "./Tax/Tax";
 function App() {
   const [showNavbar1, setShowNavbar1] = useState(true);
 
@@ -30,6 +31,7 @@ function App() {
       <Navbar />
       <Home />
       <Icon/>
+      <Tax/>
     </>
   );
 }

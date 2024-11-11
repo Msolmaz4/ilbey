@@ -7,6 +7,7 @@ import Navbar1 from "./Navbar/Navbar1";
 import "../styles.css"
 import Icon from "./Home/IconGrid";
 import Tax from "./Tax/Tax";
+import Drei from "./Drei/Drei";
 function App() {
   const [showNavbar1, setShowNavbar1] = useState(true);
 
@@ -32,6 +33,7 @@ function App() {
       <Home />
       <Icon/>
       <Tax/>
+      <Drei/>
     </>
   );
 }

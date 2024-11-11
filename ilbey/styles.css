@@ -5,8 +5,6 @@
   @apply grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#f5f1ef] mt-[-70px] pt-[140px] pb-[60px] text-[16px] justify-items-center items-center;
 }
 
-
-
 .icon-container {
   @apply   flex items-center justify-center h-full p-4;
   height: 297.73px;

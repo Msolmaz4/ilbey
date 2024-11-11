@@ -1,4 +1,4 @@
-import image from "../assets/1.jpg";
+import image from "../assets/11.jpg";
 import Button from "../Button/Button";
 
 
